@@ -1,0 +1,18 @@
+# coding: utf-8
+class Employee:
+    def __init__(self, name, seniority):
+        self.name = name
+        self.seniority = seniority
+        
+        self.grade = 1
+    
+    def grade_up(self):
+        """Повышает уровень сотрудника"""
+        self.grade += 1
+    
+    def publish_grade(self):
+        """Публикация результатов аккредитации сотрудников"""
+        print(self.name, self.grade, self.seniority)
+    
+    def check_if_it_is_time_for_upgrade(self):
+        pass
